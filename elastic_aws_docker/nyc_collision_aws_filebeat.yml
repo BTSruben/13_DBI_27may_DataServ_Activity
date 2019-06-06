@@ -1,0 +1,11 @@
+filebeat.prospectors:
+- type: log
+  paths:
+    - ./nyc_collision_data.csv
+
+output.elasticsearch:
+  hosts: ["ec2-35-181-53-159.eu-west-3.compute.amazonaws.com:9200"]
+  index: nyc_visionzero
+  pipeline: nyc_collision
+
+setup.template.enabled: false
