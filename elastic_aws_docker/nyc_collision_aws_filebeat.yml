@@ -4,7 +4,7 @@ filebeat.prospectors:
     - ./nyc_collision_data.csv
 
 output.elasticsearch:
-  hosts: ["ec2-35-181-53-159.eu-west-3.compute.amazonaws.com:9200"]
+  hosts: ["http://ec2-35-180-225-220.eu-west-3.compute.amazonaws.com:9200", "ec2-35-180-111-245.eu-west-3.compute.amazonaws.com:9200", "ec2-35-180-103-127.eu-west-3.compute.amazonaws.com:9200", "http://ec2-35-180-192-19.eu-west-3.compute.amazonaws.com:9200", "http://ec2-35-181-155-63.eu-west-3.compute.amazonaws.com:9200", "http://ec2-35-181-54-81.eu-west-3.compute.amazonaws.com:9200", "http://ec2-35-181-155-1.eu-west-3.compute.amazonaws.com:9200", "ec2-35-180-120-176.eu-west-3.compute.amazonaws.com:9200", "ec2-35-180-139-5.eu-west-3.compute.amazonaws.com:9200", "ec2-35-181-45-218.eu-west-3.compute.amazonaws.com:9200", "http://ec2-35-181-48-248.eu-west-3.compute.amazonaws.com:9200", "ec2-35-180-234-221.eu-west-3.compute.amazonaws.com:9200" ]
   index: nyc_visionzero
   pipeline: nyc_collision
 
